@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.vexels.me/media/users/3/201991/isolated/preview/a4ddb9413c755af86fdb3eaeb8d5f84f-dog-footprint-bone-flat.png">
+    <link rel="icon" href="https://images.vexels.me/media/users/3/201991/isolated/preview/a4ddb9413c755af86fdb3eaeb8d5f84f-dog-footprint-bone-flat.png">
+    <link rel="stylesheet" href="static/Cargarxml.css">
+    <title>Cargar XML</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Cargar archivo XML</h1>
+        </header>
+        <div class="centered-container">
+            <form action="/subir_archivo" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                    <label>Selecciona tus archivos (.xml) </label>
+                    <input type="file" id="uploadfile" name="uploadfile" accept=".xml" multiple>
+                <button type="Cargar">Cargar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

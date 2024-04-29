@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://images.vexels.me/media/users/3/201991/isolated/preview/a4ddb9413c755af86fdb3eaeb8d5f84f-dog-footprint-bone-flat.png">
-    <title>Cargar XML</title>
+    <link rel="stylesheet" href="static/MEnsaje.css">
+    <title>Mensaje</title>
 </head>
 <body>
-    <h1>{{ mensaje }}</h1>
+    <div class="centered-container">
+        <h1>{{ mensaje }}</h1>
+
+        <ul  class="menu-bar">
+            <li>
+                <a href="/cargarxml">Regresar</a>
+            </li>
+            <li>
+                <a href="/">Inicio</a>
+            </li>
+            <li>
+                <a href="/mostrar_archivo">Procesar Datos</a>
+            </li>
+            <li>
+                <a href="/">Datos del Estudiante</a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>

@@ -1,0 +1,92 @@
+body{
+    background: url("https://img.freepik.com/foto-gratis/lindo-cachorro-terrier-gafas-sol-posando-al-aire-libre-ia-generativa_188544-15484.jpg") center/cover no-repeat;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 60vh; /* 100% del viewport height */
+}
+
+.contenedor-barra{
+        width: 80%; /* Ancho del contenedor */
+        max-width: 600px; /* Ancho máximo */
+        height: 300px; /* Altura del contenedor */
+        overflow-y: auto; /* Barra de desplazamiento vertical automática */
+        border: 1px solid #ccc; /* Borde del contenedor */
+        padding: 10px; /* Espacio interno del contenedor */
+        background-color: rgba(255, 255, 255, 0.56);
+}
+
+.contenido-archivo{
+    width: 100%; /* El div toma el 100% del ancho del contenedor */
+    height: 100%; /* El div toma el 100% del alto del contenedor */
+}
+
+h1{
+    font-family: "Bebas Neue", Arial, sans-serif;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.menu-bar {
+    justify-content: center;
+	border-radius: 25px;
+    width: 11%;
+	height: fit-content;
+	display: inline-flex;
+	background-color: rgba(0, 0, 0, .4);
+	-webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
+	align-items: center;
+	padding: 0 10px;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    margin: 0 auto;
+	li {
+		list-style: none;
+		color: white;
+		font-family: sans-serif;
+		font-weight: bold;
+		padding: 12px 16px;
+		margin: 0 8px;
+		position: relative;
+		cursor: pointer;
+		white-space: nowrap;
+		&::before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left:0;
+			height:100%;
+			width: 100%;
+			z-index:-1;
+			transition: .2s;
+			border-radius: 25px;
+		}
+			&:hover {
+				&::before {
+					background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+						box-shadow: 0px 3px 20px 0px black;
+						transform: scale(1.2);
+				}
+				color: black;
+		}
+	}
+}
+
+.menu-bar a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto de su contenedor */
+}
+
+.centered-container {
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    /*margin-top: 5px;*/
+}
+

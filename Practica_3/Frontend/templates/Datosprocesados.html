@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.vexels.me/media/users/3/201991/isolated/preview/a4ddb9413c755af86fdb3eaeb8d5f84f-dog-footprint-bone-flat.png">
+    <link rel="stylesheet" href="static/Datosprocesados.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <title>Mostrar Contenido de Archivo</title>
+</head>
+<body>
+    <header>
+        <h1>Datos Procesados</h1>
+    </header>
+    <div class="contenedor">
+        <div class="contenedor-barra">
+            <div class="contenido-archivo" id="contenido-archivo">
+                {% if contenido_archivo %}
+                    <pre>{{ contenido_archivo }}</pre>
+                {% else %}
+                    <p>No hay contenido disponible.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="centered-container">
+        <ul  class="menu-bar">
+            <li>
+                <a href="/">Regresar al inicio</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

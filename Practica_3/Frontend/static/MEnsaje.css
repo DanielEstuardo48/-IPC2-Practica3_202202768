@@ -1,42 +1,18 @@
 body {
-    background: url("https://img.freepik.com/foto-gratis/lindo-gatito-mirando-pelaje-esponjoso-naturaleza-juguetona-belleza-naturaleza-generada-inteligencia-artificial_25030-63178.jpg") center/cover no-repeat;
+    background: url(https://static.vecteezy.com/system/resources/previews/028/115/218/non_2x/cute-dog-on-pet-themed-background-ai-generative-free-photo.jpg) center/cover no-repeat;
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
 }
 
-.container {
-    text-align: center; /* Centrar contenido dentro del contenedor */
+h1{
+    margin-top: 250px;
+    background-color: rgba(255, 255, 255, 0.375);
+    border-radius: 20px;
+    text-align: center;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    padding: 20px;
-    z-index: 1000;
-    text-align: center; /* Centra el texto horizontalmente */
-}
-
-.logo {
-    font-family: "Bebas Neue", Arial, sans-serif;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.56);
-    color: black;
-    font-size: 42px;
-    margin: 0;
-    padding: 5px;
-    display: inline-block; /* Hace que el elemento sea un bloque en línea para que se pueda centrar horizontalmente */
-    margin-left: 500px;
-}
-
-.centered-container {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    /*margin-top: 5px;*/
-}
 
 .menu-bar {
 	border-radius: 25px;
@@ -47,7 +23,7 @@ header {
     backdrop-filter: blur(10px);  
 	align-items: center;
 	padding: 0 10px;
-	margin: 350px 0 0 0;
+	margin: 150px 0 0 0;
 	li {
 		list-style: none;
 		color: white;

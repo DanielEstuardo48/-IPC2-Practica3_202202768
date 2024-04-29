@@ -20,10 +20,10 @@ def subir_archivo(request):
             response = requests.post(url, files=files)
             if response.status_code == 200:
                 # El archivo se cargó exitosamente en el backend Flask
-                mensaje = 'Archivo cargado exitosamente en Flask'
+                mensaje = 'Archivo cargado exitosamente'
             else:
                 # Ocurrió un error al cargar el archivo en el backend Flask
-                mensaje = 'Error al cargar el archivo en Flask'
+                mensaje = 'Error al cargar el archivo'
         else:
             # No se adjuntó ningún archivo en la solicitud POST
             mensaje = 'No se ha seleccionado ningún archivo'
@@ -33,3 +33,20 @@ def subir_archivo(request):
     
     # Renderiza la plantilla con el mensaje
     return render(request, 'mensaje.html', {'mensaje': mensaje})
+
+def mostrar_archivo(request):
+    contenido_respons = requests.get('http://127.0.0.1:4000/cargardatos')
+    contenido_archivo = contenido_respons.text
+
+    return render(request, 'Datosprocesados.html', {'contenido_archivo': contenido_archivo})
+
+def borrar_datos_backend(request):
+    url = 'http://127.0.0.1:4000/borrardatos'
+    response = requests.delete(url)
+    if response.status_code == 200:
+        return HttpResponse(status=204)
+    else:
+        return HttpResponse(status=500)
+
+def datosestudiante(request):
+    return render (request, 'Datos.html')
